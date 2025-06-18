@@ -53,8 +53,7 @@ namespace demo2._0
                     FailedLoginAttempts = 0,
                     isLocked = false,
                     firstLogin = true,
-                    lastLoginDate = null,
-                    position = txtPosition.Text.Trim()
+                    lastLoginDate = null
                 };
 
                 _hotelData.Users.Add(user);

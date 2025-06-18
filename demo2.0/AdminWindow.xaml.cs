@@ -27,11 +27,6 @@ namespace demo2._0
             LoadUsers();
         }
 
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
-
         private async void LoadUsers()
         {
             try
