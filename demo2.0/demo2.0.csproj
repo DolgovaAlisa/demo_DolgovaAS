@@ -70,6 +70,9 @@
     <Compile Include="AddEmployeeWindow.xaml.cs">
       <DependentUpon>AddEmployeeWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ChangePasswordWindow.xaml.cs">
+      <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Cleaning_Schedule.cs">
       <DependentUpon>HotelManagament.tt</DependentUpon>
     </Compile>
@@ -125,7 +128,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ChangePassword.xaml">
+    <Page Include="ChangePasswordWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -139,9 +142,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="ChangePassword.xaml.cs">
-      <DependentUpon>ChangePassword.xaml</DependentUpon>
     </Compile>
     <Compile Include="HotelManagament.Context.cs">
       <AutoGen>True</AutoGen>

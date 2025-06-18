@@ -6,6 +6,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Shapes;
 using demo2._0;
 
 namespace demo2._0
@@ -80,7 +86,7 @@ namespace demo2._0
                 if (checkBox != null)
                 {
                     var userId = (int)checkBox.Tag;
-                    var changePassword = new ChangePassword(userId);
+                    var changePassword = new ChangePasswordWindow(userId);
                     changePassword.ShowDialog();
                     LoadUsers();
                     this.Close();
@@ -111,9 +117,7 @@ namespace demo2._0
                                 if (user != null)
                                 {
                                     context.Users.Remove(user);
-                                    await context.SaveChangesAsync();
-
-                                    MessageBox.Show("Пользователь успешно удален.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+                                    await context.SaveChangesAsync(); MessageBox.Show("Пользователь успешно удален.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
                                     LoadUsers();
                                 }
                             }
@@ -163,3 +167,5 @@ namespace demo2._0
         }
     }
 }
+
+
