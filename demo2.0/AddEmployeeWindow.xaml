@@ -23,25 +23,25 @@
                    Margin="0,10"/>
 
         <StackPanel Grid.Row="1" Margin="10">
-            <TextBlock Text="Фамилия" FontWeight="Bold"/>
+            <TextBlock Text="Фамилия" FontWeight="Bold" Width="247"/>
             <TextBox x:Name="txtLastName" Width="250"/>
 
-            <TextBlock Text="Имя" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="Имя" FontWeight="Bold" Margin="0,10,0,0" Width="246"/>
             <TextBox x:Name="txtFirstName" Width="250"/>
 
-            <TextBlock Text="Должность" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="Должность" FontWeight="Bold" Margin="0,10,0,0" Width="247"/>
             <TextBox x:Name="txtPosition" Width="250"/>
 
-            <TextBlock Text="Роль" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="Роль" FontWeight="Bold" Margin="0,10,0,0" Width="246"/>
             <ComboBox x:Name="cmbRole" Width="250">
                 <ComboBoxItem Content="admin"/>
                 <ComboBoxItem Content="user" IsSelected="True"/>
             </ComboBox>
 
-            <TextBlock Text="Логин" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="Логин" FontWeight="Bold" Margin="0,10,0,0" Width="246"/>
             <TextBox x:Name="txtLogin" Width="250"/>
 
-            <TextBlock Text="Пароль" FontWeight="Bold" Margin="0,10,0,0"/>
+            <TextBlock Text="Пароль" FontWeight="Bold" Margin="0,10,0,0" Width="247"/>
             <PasswordBox x:Name="txtPassword" Width="250"/>
         </StackPanel>
 
@@ -54,6 +54,7 @@
                 Background="#FFF0F0F0"
                 BorderBrush="{x:Null}"
                 FontWeight="Bold"
+                Foreground="#191970"
                 Click="AddUserButton_Click"/>
     </Grid>
 </Window>

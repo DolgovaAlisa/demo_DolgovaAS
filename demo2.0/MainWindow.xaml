@@ -5,22 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:demo2._0"
         mc:Ignorable="d"
-        Title="Авторизация" MinHeight="360" MinWidth="500" SizeToContent="WidthAndHeight" ResizeMode="CanResize">
+        Title="Авторизация" MinHeight="360" MinWidth="500" SizeToContent="WidthAndHeight" ResizeMode="CanResize" Background="#B0C4DE">
 
-    <Window.Resources>
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="#FF6EBFBF"/>
-            <Setter Property="BorderBrush" Value="{x:Null}"/>
-            <Setter Property="Foreground" Value="Black"/>
-        </Style>
-    </Window.Resources>
-
-    <Window.Background>
-        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-            <GradientStop Color="#FFFBFFF7" Offset="0.0"/>
-            <GradientStop Color="Aquamarine" Offset="1.0"/>
-        </LinearGradientBrush>
-    </Window.Background>
 
     <Grid Margin="20">
         <Grid.RowDefinitions>
@@ -32,21 +18,21 @@
             Text="Авторизация"
             FontSize="24"
             FontWeight="Bold"
-            Foreground="Black"
+            Foreground="#191970"
             HorizontalAlignment="Center"
             Margin="0, 10"
             FontFamily="Cascadia Code"/>
 
         <StackPanel Grid.Row="1" VerticalAlignment="Center" Width="300" HorizontalAlignment="Center">
 
-            <TextBlock Text="Логин" FontWeight="Bold" FontSize="16" Foreground="#444"/>
+            <TextBlock Text="Логин" FontWeight="Bold" FontSize="16" Foreground="#191970"/>
             <TextBox x:Name="txtUsername"
                      Margin="0, 5, 0, 10"
                      Height="35"
                      Background="#Fff"
                      BorderBrush="{x:Null}"/>
 
-            <TextBlock Text="Пароль" FontWeight="Bold" FontSize="16" Foreground="#444"/>
+            <TextBlock Text="Пароль" FontWeight="Bold" FontSize="16" Foreground="#191970"/>
             <PasswordBox x:Name="txtPassword"
                          Margin="0,5,0,10"
                          Height="35"
@@ -56,7 +42,7 @@
             <Button Content="Войти"
                     Width="100"
                     Height="35"
-                    Background="#FF6EBFBF"
+                    Background="#FFF0F0F0"
                     BorderBrush="{x:Null}"
                     FontWeight="Bold"
                     FontSize="18"
