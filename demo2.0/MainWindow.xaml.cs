@@ -27,6 +27,11 @@ namespace demo2._0
             InitializeComponent();
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string login = txtUsername.Text;

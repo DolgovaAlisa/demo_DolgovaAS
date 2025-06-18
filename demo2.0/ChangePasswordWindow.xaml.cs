@@ -29,6 +29,11 @@ namespace demo2._0
             _userId = userId;
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void BtnChangePassword_Click(object sender, RoutedEventArgs e)
         {
             string currentPassword = txtCurrentPassword.Password;

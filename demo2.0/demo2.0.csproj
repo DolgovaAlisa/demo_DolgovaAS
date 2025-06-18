@@ -148,10 +148,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>HotelManagament.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="HotelManagament.Designer.cs">
+    <Compile Include="HotelModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>HotelManagament.edmx</DependentUpon>
+      <DependentUpon>HotelModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -176,12 +176,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="HotelManagament.edmx">
+    <EntityDeploy Include="HotelModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>HotelManagament.Designer.cs</LastGenOutput>
+      <LastGenOutput>HotelModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="HotelManagament.edmx.diagram">
-      <DependentUpon>HotelManagament.edmx</DependentUpon>
+    <None Include="HotelModel.edmx.diagram">
+      <DependentUpon>HotelModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -198,12 +198,12 @@
   <ItemGroup>
     <Content Include="HotelManagament.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>HotelManagament.edmx</DependentUpon>
+      <DependentUpon>HotelModel.edmx</DependentUpon>
       <LastGenOutput>HotelManagament.Context.cs</LastGenOutput>
     </Content>
     <Content Include="HotelManagament.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>HotelManagament.edmx</DependentUpon>
+      <DependentUpon>HotelModel.edmx</DependentUpon>
       <LastGenOutput>HotelManagament.cs</LastGenOutput>
     </Content>
   </ItemGroup>
