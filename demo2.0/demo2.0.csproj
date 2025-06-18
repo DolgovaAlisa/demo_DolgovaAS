@@ -73,53 +73,6 @@
     <Compile Include="ChangePasswordWindow.xaml.cs">
       <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cleaning_Schedule.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Guests.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Guest_Services.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="HotelManagament.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Integrations.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Payments.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Reservations.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Rooms.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Room_Access.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Services.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Statistics_hotel.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Users.cs">
-      <DependentUpon>HotelManagament.tt</DependentUpon>
-    </Compile>
     <Page Include="AddEmployeeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -142,16 +95,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="HotelManagament.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HotelManagament.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="HotelModel.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>HotelModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -176,13 +119,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="HotelModel.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>HotelModel.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="HotelModel.edmx.diagram">
-      <DependentUpon>HotelModel.edmx</DependentUpon>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -194,18 +130,6 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="HotelManagament.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>HotelModel.edmx</DependentUpon>
-      <LastGenOutput>HotelManagament.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="HotelManagament.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>HotelModel.edmx</DependentUpon>
-      <LastGenOutput>HotelManagament.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
