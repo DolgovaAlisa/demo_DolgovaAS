@@ -591,7 +591,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="HotelManagementEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="HotelManagementEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Cleaning_Schedule" EntityType="Self.Cleaning_Schedule" />
           <EntitySet Name="Guest_Services" EntityType="Self.Guest_Services" />
           <EntitySet Name="Guests" EntityType="Self.Guests" />
@@ -687,7 +687,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="Хранилище HotelManagementModelContainer" CdmEntityContainer="HotelManagementEntities2">
+        <EntityContainerMapping StorageEntityContainer="Хранилище HotelManagementModelContainer" CdmEntityContainer="HotelManagementEntities1">
           <EntitySetMapping Name="Cleaning_Schedule">
             <EntityTypeMapping TypeName="HotelManagementModel.Cleaning_Schedule">
               <MappingFragment StoreEntitySet="Cleaning_Schedule">

@@ -41,7 +41,7 @@ namespace demo2._0
             login = login.Trim();
             password = password.Trim();
 
-            using (var context = new HotelManagementEntities2())
+            using (var context = new HotelManagementEntities1())
             {
                 var user = context.Users.FirstOrDefault(u => u.username == login);
 

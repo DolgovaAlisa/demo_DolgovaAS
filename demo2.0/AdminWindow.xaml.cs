@@ -31,7 +31,7 @@ namespace demo2._0
         {
             try
             {
-                using (var context = new HotelManagementEntities2())
+                using (var context = new HotelManagementEntities1())
                 {
                     var users = await context.Users.ToListAsync();
                     UsersListBox.Items.Clear();
@@ -111,7 +111,7 @@ namespace demo2._0
                     {
                         try
                         {
-                            using (var context = new HotelManagementEntities2())
+                            using (var context = new HotelManagementEntities1())
                             {
                                 var user = await context.Users.FirstOrDefaultAsync(u => u.id == userId);
                                 if (user != null)
@@ -150,7 +150,7 @@ namespace demo2._0
         {
             try
             {
-                using (var context = new HotelManagementEntities2())
+                using (var context = new HotelManagementEntities1())
                 {
                     var user = await context.Users.FirstOrDefaultAsync(u => u.id == userId);
                     if (user != null)

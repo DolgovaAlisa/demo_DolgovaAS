@@ -25,7 +25,7 @@ namespace demo2._0
         public AddEmployeeWindow()
         {
             InitializeComponent();
-            _hotelData = new HotelManagementEntities2();
+            _hotelData = new HotelManagementEntities1();
         }
 
         private void AddUserButton_Click(object sender, RoutedEventArgs e)

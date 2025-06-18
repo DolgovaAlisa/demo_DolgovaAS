@@ -51,7 +51,7 @@ namespace demo2._0
 
             try
             {
-                using (var context = new HotelManagementEntities2())
+                using (var context = new HotelManagementEntities1())
                 {
                     var user = context.Users.FirstOrDefault(u => u.id == _userId);
 

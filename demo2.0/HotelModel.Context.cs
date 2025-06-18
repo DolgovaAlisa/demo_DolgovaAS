@@ -15,10 +15,10 @@ namespace demo2._0
     using System.Data.Entity.Core.Objects;
     using System.Linq;
     
-    public partial class HotelManagementEntities2 : DbContext
+    public partial class HotelManagementEntities1 : DbContext
     {
-        public HotelManagementEntities2()
-            : base("name=HotelManagementEntities2")
+        public HotelManagementEntities1()
+            : base("name=HotelManagementEntities1")
         {
         }
     
